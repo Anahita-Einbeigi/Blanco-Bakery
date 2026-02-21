@@ -1,0 +1,36 @@
+{  "home": "Home",
+    "about": "About",
+    "menu": "Menu", 
+    "contact": "Contact",   
+
+    "aboutPage": {
+    "heroTitle": "About Blanco Bakery",
+    "heroSubtitle": "We create exclusive cakes with passion, elegance and carefully selected ingredients for all your special occasions.",
+    "section1Title": "Our Vision",
+    "section1Text1": "We create exclusive cakes with passion, precision and utmost care for every detail. From handpicked ingredients to elegant design, each cake is a unique experience that combines taste, aesthetics and quality at the highest level. Our mission is to transform every order into a memorable moment for our customers.",
+    "section1Text2": "Every detail is carefully chosen to provide a luxurious experience.",
+    "cardsTitle": "What We Offer",
+    "cards": [
+      { "title": "Premium Ingredients", "text": "Only carefully selected top-quality ingredients." },
+      { "title": "Unique Design", "text": "Aesthetically designed cakes with a luxury finish." },
+      { "title": "Personal Service", "text": "We customize each order according to your wishes." }
+    ],
+    "parallaxTitle": "An Experience Beyond The Ordinary",
+    "parallaxText": "Let us create something magical for your next event."
+  },
+    
+    "homePage": {
+        "heroTitle": "My favorite",
+        "heroTitle2": "cake",
+        "heroInfo": "Welcome to Blanco Bakery! Here you get cake that is made for you. Our cakes are made with love and passion, and we strive to offer the best taste and quality. Welcome to explore our menu and find your favorite cake!",
+        "heroInfo2": "All Orders are shipped within 24 hours. Our products are proudly designed, sourced and manufactured in the Sweden.",
+        "heroInfo3": "We are committed to providing our customers with the best possible service and products. If you have any questions or concerns, please don't hesitate to contact us."
+    },
+    
+        "menuPage": {
+          "title": "Our Menu",
+          "noProducts": "No products available at the moment",
+          "addToCart": "Add to Cart"
+        }
+
+}

@@ -1,0 +1,372 @@
+/* ===========================
+   GLOBAL FONT
+   =========================== */
+html, body, #root {
+  margin: 0;
+  margin: 0;
+  background-color: #ffffff;
+  padding: 0;
+  height: 100%;
+  font-family: 'Cormorant Garamond', Georgia, "Times New Roman", serif !important;
+}
+
+section {
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* =========================
+   SCROLLING BANNER
+========================= */
+.scrollingBanner-banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.scrollingBanner-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollingBanner-scrollLeft 20s linear infinite;
+  font-size: 1rem;
+  font-weight: 600;
+  color: inherit;
+}
+
+.scrollingBanner-marquee span {
+  padding: 0px 2rem;
+  color: inherit;
+}
+
+.scrollingBanner-dark {
+  color: #dac5a7;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.scrollingBanner-light {
+  color: rgba(0,0,0,0.7);
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+@keyframes scrollingBanner-scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===========================
+  navbar
+=========================== */
+.navbar-custom {
+  position: fixed;  
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(19, 18, 18, 0.90);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar-custom.scrolled {
+  background-color: rgba(19, 18, 18, 0.95); 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.navbar-custom .nav-link {
+  color: rgb(242, 237, 237);
+  transition: color 0.4s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #f9f6f4;
+}
+
+.navbar-custom.scrolled .nav-link {
+  color: #f0f0f0;
+}
+
+.navbar-custom .nav-link:focus,
+.navbar-custom .nav-link:active,
+.navbar-custom .nav-link:focus-visible{
+  color: #ffffff !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+/* -----------------------
+footer
+------------------------ */
+.footer{
+    background-color: rgba(19, 18, 18, 0.94);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+} 
+
+/* ----------------------
+about page
+------------------------ */
+/* .slide-in-right{
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+/*------------------------
+ home page
+---------------------- */
+.hero-highlight {
+  display: block;
+  font-size: 3rem;
+  margin-left: 150px;
+}
+
+.home-section {
+  min-height: 100vh;   
+  display: flex;
+  align-items: center;
+  background-color: #f9f6f4;
+  margin-top: 25px;
+}
+
+.hero-img {
+  max-height: 80vh;    
+}
+
+/* --------------------
+menu
+---------------------------- */
+.product-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  max-width: 90%;
+  height: 100%;
+  background: white;
+  padding: 30px;
+  overflow-y: auto;
+  z-index: 1001;
+  animation: slideIn 0.3s ease;
+}
+
+.drawer-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-drawer {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 33%;
+  max-width: 400px;
+  height: 100%;
+  background: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1002;
+}
+
+.cart-drawer.open {
+  right: 0;
+}
+
+@keyframes slideIn {
+  from { right: -400px; }
+  to { right: 0; }
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+/*---------------------
+about page 
+------------------------*/
+.about-hero {
+  height: 60vh;
+  background-color: #f9f6f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* IMAGE + TEXT */
+.large-img {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+
+.small-img {
+  width: 100%;
+  object-fit: cover;
+  height: 170px;
+  margin-bottom: 10px;
+}
+
+/* CARDS */
+.about-card {
+  background-color: #faf8f5;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-card h5 {
+  margin-bottom: 15px;
+}
+
+/* PARALLAX */
+.parallax-section {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* -----------------------
+contact page
+-------------------------- */
+.contact-section {
+  background-color: #f9f6f4;
+  margin-top: 30px;
+}
+
+/* Contact image animation */
+.blanco-contact {
+  /* position: relative; */
+  position: sticky;
+  top: 120px;
+  align-self: flex-start;
+}
+
+.contact-image {
+  max-height: 320px;
+  transform: translateX(300px); 
+  opacity: 0;
+  animation: flyInRight 1.2s ease-out forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes flyInRight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ---------------------
+cart sidebar
+-------------------------- */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background-color: #f9f6f4;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  z-index: 1050;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1040;
+}

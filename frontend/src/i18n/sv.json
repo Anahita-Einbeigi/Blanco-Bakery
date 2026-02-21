@@ -1,0 +1,35 @@
+ {  "home": "Hem",
+    "about": "Om Oss",  
+    "menu": "Meny",
+    "contact": "Kontakt",
+
+    "aboutPage": {
+        "heroTitle": "Om Blanco Bakery",
+        "heroSubtitle": "Vi skapar exklusiva bakverk med passion, elegans och noggrant utvalda ingredienser för alla dina speciella tillfällen.",
+        "section1Title": "Vår Vision",
+        "section1Text1": "Vi skapar exklusiva bakverk med passion, noggrannhet och största omsorg om varje detalj. Från handplockade ingredienser till elegant design, varje bakverk är en unik upplevelse som kombinerar smak, estetik och kvalitet på högsta nivå. Vår mission är att förvandla varje beställning till en minnesvärd stund för våra kunder.",
+        "section1Text2": "Varje detalj är noga utvald för att ge en lyxig upplevelse.",
+        "cardsTitle": "Vad Vi Erbjuder",
+        "cards": [
+          { "title": "Premium Ingredienser", "text": "Endast noggrant utvalda råvaror av högsta kvalitet." },
+          { "title": "Unik Design", "text": "Estetiskt utformade cakes med lyxig finish." },
+          { "title": "Personlig Service", "text": "Vi anpassar varje beställning efter dina önskemål." }
+        ],
+      "parallaxTitle": "En Upplevelse Utöver Det Vanliga",
+      "parallaxText": "Låt oss skapa något magiskt till ditt nästa event."
+    },
+
+    "homePage": {
+        "heroTitle": "Min favorit",
+        "heroTitle2": "kaka",
+        "heroInfo": "Välkommen till Blanco Bakery! Här får du kaka som är till för dig. Våra kakor är gjorda med kärlek och passion, och vi strävar efter att erbjuda den bästa smaken och kvalitén. Välkommen att utforska vår meny och hitta din favoritkaka!",
+         "heroInfo2": "Alla beställningar skickas inom 24 timmar. Våra produkter är stolt designade, källor och tillverkade i Sverige. ",
+         "heroInfo3": "Vi är engagerade i att ge våra kunder den bästa möjliga servicen och produkterna. Om du har några frågor eller funderingar, tveka inte att kontakta oss."
+      },
+      
+        "menuPage": {
+          "title": "Vår Meny",
+          "noProducts": "Inga produkter tillgängliga just nu",
+          "addToCart": "Lägg till i varukorg"
+        }
+    }
