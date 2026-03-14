@@ -12,8 +12,6 @@ html, body, #root {
 
 section {
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif !important;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 button {
@@ -116,39 +114,117 @@ footer
 /* ----------------------
 about page
 ------------------------ */
-/* .slide-in-right{
-  opacity: 0;
-  transform: translateX(100px);
-  animation: slideRight 1s ease-out forwards;
-}
-
-@keyframes slideRight {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-} */
 
 /*------------------------
  home page
----------------------- */
+-------------home new--------- */
+.home-section{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  background:#f9f6f4;
+  position:relative;
+  overflow:hidden;
+  padding: 0;
+  height: auto;
+  min-height: 0;
+  /* padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0; */
+}
+
+.hero-row{
+  width:100%;
+  align-items:center;
+}
+
+.hero-text{
+  z-index:2;
+}
+
+.hero-img{
+  width:100%;
+  max-height:90vh;
+  object-fit:contain;
+}
+
+.hero-image-wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+}
+
 .hero-highlight {
-  display: block;
-  font-size: 3rem;
-  margin-left: 150px;
+  display:block;
+  font-size:3rem;
+  margin-left:150px;
 }
 
-.home-section {
-  min-height: 100vh;   
-  display: flex;
-  align-items: center;
-  background-color: #f9f6f4;
-  margin-top: 25px;
+@media (max-width: 1025){
+   .home-section{
+    height:auto;
+    min-height: 0;
+  }
 }
 
-.hero-img {
-  max-height: 80vh;    
+@media (max-width:768px){
+
+  .home-section{
+    min-height:auto;
+    height:auto;
+    padding-top:120px;
+    padding-bottom:80px;
+    margin-top: 30px !important;
+  }
+
+  .hero-row{
+    position:relative;
+  }
+
+  .hero-image-wrapper{
+    position:absolute;
+    inset:0;
+    z-index:1;
+  }
+
+  .hero-img{
+    width:100%;
+    height: auto;
+    max-height: 85vh;
+    /* height:100%; */
+    object-fit:contain;
+    opacity:0.4;
+  }
+
+  .hero-text{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    padding:40px;
+    padding-left:50px;
+    padding-right:50px;
+    color:#000;
+  }
+
+  .hero-side-image{
+    display:none;
+  }
+
+  .hero-highlight {
+    display:block;
+    font-size:3rem;
+    margin-left:80px;
+  }
 }
+
+@media (max-width:415px){
+  .home-section{
+    min-height:auto;
+    height:auto;
+    padding-top:20px;
+  }
+}
+
 
 /* --------------------
 menu
